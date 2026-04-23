@@ -1,11 +1,86 @@
+/* CORES
+#f0e3d1 - bege claro
+#EB5E25 - laranja
+#682923 - marrom
+#E09042 - laranja claro
+#F1B479 - laranja médio
+#D7586D - rosa
+#FFF3F5 - rosa claro
+#762C17 - marrom escuro
+#D7586D - rosa
+
+*/
+
+
+
+
 body{
+    font-family: Arial, Helvetica, sans-serif;
     padding: 60px;
+    background-color: #FFF3F5;
 }
 
+#corpo{
+    border: #682923 solid 1px;
+    padding: 10px;
+    max-width: 1400px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;/* separa esquerda e direita */
+    align-items: center;/* alinha verticalmente */
+    padding: 10px 20px;
+    flex-direction: row;
+}
 
 nav{
     display: flex;
     justify-content: space-around;
+}
+
+.nav-links{
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D7586D;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.logo{
+    justify-content: first baseline;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaço entre imagem e texto */
+    margin-right: 600px;
+}
+
+.logo-icon{
+    width: 120px;
+    height: 120px;
+}
+
+.icon-nav{
+    width: 50px;
+    height: 50px;
 }
 
 img{
@@ -14,5 +89,57 @@ img{
 }
 
 span{
+    color: #D7586D;
     font-size: 32px;
+}
+
+.link-header{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+#sobre{
+    margin-top: 50px;
+    margin-right: 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1{
+    font-size: 32px;
+    color: #D7586D;
+}
+
+p{
+    font-size: 18px;
+    color: #762C17;
+}
+
+#img-principal{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+main{
+    display: flex;
+}
+
+ul{
+    display: flex;   
+}
+
+.icon-footer{
+    width: 100px;
+    height: 100px;
+}
+
+.icon-zap{
+    width: 100px;
+    height: 100px;
 }
